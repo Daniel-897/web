@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+
+
+.fotos{
+
+
+    width: 1100px;
+    height: auto;
+    margin: auto 0;
+    overflow: hidden;
+    border-radius: 15px;
+ 
+}
+
+.fotos ul {
+
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: fotos 10s infinite alternate ease-in-out;
+}
+
+.fotos img {
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+
+
+
+
+body{
+ 
+    
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+
+}
+
+
+
+
+.link:hover{
+    padding-top: 54px;
+}
+
+
+ul li {
+    list-style: none;
+}
+.link > li {
+    float: left;
+}
+
+
+
+
+
+
+
+.link a {
+    height: 55px;
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.link a:hover {
+    background: gray;
+}
+.link li > ul {
+    height: 55px;
+    display: none;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.link li ul li a:hover {
+    background: gray;
+    
+}
+
+.link li:hover > ul {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider_list{
+
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+}
+
+.mein_slider_nav{
+
+    display: flex;
+    column-gap: 1rem;
+    position: fixed;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+.mein_slider_nav a{
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: aqua;
+    opacity: .75;
+    transition: opacity ease 250ms;
+
+}
+
+.mein_slider_nav a:hover {
+
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vinculos > div {
+    
+
+    float: left;
+}
+.vinculos div li {
+
+    list-style: none;
+}
+.vinculos div ul li {
+    display: none;
+    position: absolute;
+
+
+}
+.vinculos div ul li:hover {
+    display: block;
+
+}
+
+.vinculos {
+
+    display: block;
+    margin-right: 10px;
+}
+
+.vinculos a {
+    height: 55px;
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.vinculos a:hover {
+    background: gray;
+}
+
+
+
+
+
+
+
+img {
+    
+    max-width: 100%;
+    border-radius: 15px;
+    
+}
+
+
+.logo { 
+
+    margin-top: 15px;
+    width: 55PX;
+    height: 55PX;
+    transition-property: url(../imagenes/logo.png);
+    transition-duration: 1s;
+    transition-timing-function:ease-out ;
+    transition-delay: 1s;
+    
+    
+
+}
+.logo:active{ 
+    
+    margin-top: 500px;
+    width: 400px;
+    height: 400PX;
+
+}
+
+
+
+.introduction {
+    padding: 30px;
+    background: rgb(75, 149, 176);
+}
+
+
+.title {
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: black;
+    padding: 70px 70px;
+   
+}
+
+
+
+
+
+
+.content {
+    padding-top: 85px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+.box-container .box {
+    height: 52vh;
+    width: 80vh;
+    background: rgb(39, 36, 44);
+    text-align: center;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+    border-radius: 5%;
+}
+
+.box-container img{
+  
+    width: 80vh;
+}
+
+
+
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: pink;
+    margin: 10px;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+
+}
+
+
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a { 
+    margin: 0 10px;
+}
+
+.btn {
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid blueviolet;
+    color: rgb(5, 3, 3);
+    text-decoration: none;
+    background: blueviolet;
+}
+.btn:hover {
+    background: none;
+    
+}
+
+
+
+@keyframes fotos {
+
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+
+
+    70% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .introduction {
+        height: 120vh;
+    }
+    .vinculos {
+        display: none;
+    }
+}
+
+    
